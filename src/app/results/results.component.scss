@@ -1,0 +1,16 @@
+.year-select{
+  width: 50%;
+}
+
+.rounds-container {
+  display: flex;
+  justify-content: space-around;
+
+  .rounds-list {
+    width: 50%;
+  }
+
+  .selected-round {
+    width: 50%;
+  }
+}

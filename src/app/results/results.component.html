@@ -1,0 +1,20 @@
+<div class='year-select'>
+  <mat-form-field appearance="fill">
+    <mat-label>Select year</mat-label>
+    <mat-select (selectionChange)="onYearChange($event)">
+      <mat-option *ngFor="let year of availableYears" [value]="year.season">
+        {{year.season}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="rounds-container">
+  <div class="rounds-list">
+    <app-round-list [races]="races"></app-round-list>
+  </div>
+
+  <div class="selected-round">
+
+  </div>
+</div>
+
